@@ -43,7 +43,6 @@ class PeopleController < ApplicationController
     end
 
     def person_params
-      binding.pry
       params.require(:person).permit(:first_name, :last_name, :avatar, :phone, :email)
     end
 end
